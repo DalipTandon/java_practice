@@ -57,9 +57,14 @@ public class streamPractice {
         // });
 
         // Q5. How do you print all distinct department names?
-        List<String> dep=em.stream().map(Employee::getDeptName).distinct().collect(Collectors.toList());
-        dep.forEach(de->System.out.println(de));
+        // List<String> dep=em.stream().map(Employee::getDeptName).distinct().collect(Collectors.toList());
+        // dep.forEach(de->System.out.println(de));
 
+        // Q6. How do you find employees older than 28?
+        // Long ageComp=em.stream().filter(e->e.getAge()>=28).count();
+        // System.out.println(ageComp);
+
+        
     }
     
 }
